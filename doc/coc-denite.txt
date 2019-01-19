@@ -1,0 +1,116 @@
+*coc-denite.txt*				Denite support for coc.nvim
+
+Author: Qiming Zhao <chemzqm at gmail.com>
+License: MIT license
+
+CONTENTS					*coc-contents*
+
+Install						|coc-denite-install|
+Denite support 					|coc-denite|
+  Denite extension  				|coc-denite-extension|
+  Denite source  				|coc-denite-source|
+  Denite diagnostic     			|coc-denite-diagnostic|
+  Denite symbols        			|coc-denite-symbols|
+  Denite workspace      			|coc-denite-workspace|
+  Denite service        			|coc-denite-service|
+  Denite command        			|coc-denite-command|
+
+==============================================================================
+
+INSTALL						*coc-denite-install*
+
+Use plugin manager, like https://github.com/junegunn/vim-plug by add: >
+
+  Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
+  Plug 'neoclide/coc-denite'
+
+to your `init.vim` and run: >
+
+  :PlugInstall
+
+For other plugin manager, run `:coc#util#install()` after plugin is loaded,
+this command would download latest coc binary from github release page.
+
+DENITE SUPPORT 					*coc-denite*
+
+Coc provide some |denite.nvim| sources for better list filter & sort experience
+and actions.
+
+------------------------------------------------------------------------------
+						*coc-denite-extension*
+:Denite coc-extension
+
+	Manage extensions using denite interface.
+
+	Actions:
+
+	'toggle': enable/disable selected extensions, it's persisted.
+
+	'activate': activate selected extension(s).
+
+	'deactivate': deactivate selected extension(s).
+
+	'reload': reload selected extension(s).
+
+	'uninstall': uninstall selected extension(s).
+
+
+------------------------------------------------------------------------------
+						*coc-denite-source*
+:Denite coc-source
+
+	Show all sources of coc completion.
+
+	Actions:
+
+	'toggle': enable/disable the source(s) for current vim sesion.
+
+	'refresh': refresh selected source(s).
+
+------------------------------------------------------------------------------
+						*coc-denite-diagnostic*
+:Denite coc-diagnostic
+
+	Show all diagnostics of current vim sesion.
+
+	Actions: same as file kind.
+
+------------------------------------------------------------------------------
+:Denite coc-workspace 				*coc-denite-workspace*
+
+	Search workspace symbols using denite buffer.
+
+	Actions: same as file kind.
+
+------------------------------------------------------------------------------
+						*coc-denite-symbols*
+:Denite coc-symbols
+
+	Show symbols of current buffer.
+
+	Actions: same as file kind.
+
+------------------------------------------------------------------------------
+						*coc-denite-service*
+:Denite coc-service
+
+	Manage coc services.
+
+	Actions:
+
+	- 'toggle' : default action for start/stop service.
+
+------------------------------------------------------------------------------
+						*coc-denite-command*
+:Denite coc-command
+
+	Find and run commands contributed by extensions.
+
+	Actions:
+
+	- 'run' : default action.
+
+
+==============================================================================
+
+vim:tw=78:nosta:noet:ts=8:sts=0:ft=help:noet:fen:fdm=marker:
