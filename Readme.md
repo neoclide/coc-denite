@@ -21,12 +21,16 @@ see `:h coc-denite` for detail.
 
 Use plugin manager, like https://github.com/junegunn/vim-plug by add:
 
-Plug 'neoclide/coc.nvim', {'tag': '\*', 'do': { -> coc#util#install()}}
+```
+Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
 Plug 'neoclide/coc-denite'
+```
 
 to your `vimrc` and run:
 
+```
 :PlugInstall
+```
 
 ## LICENSE
 
