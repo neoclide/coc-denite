@@ -39,8 +39,6 @@ class Source(Base):
             return []
         candidates = []
         for item in items:
-            if item['kind'] == 'Variable':
-                continue
             candidates.append({
                 'word': item['text'],
                 'abbr': '%s%s [%s]' % ('  ' * item['level'], item['text'], item['kind']),
