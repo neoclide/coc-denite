@@ -3,7 +3,7 @@
 Author: Qiming Zhao <chemzqm at gmail.com>
 License: MIT license
 
-CONTENTS					*coc-contents*
+CONTENTS					*coc-denite-contents*
 
 Install						|coc-denite-install|
 Denite support 					|coc-denite|
